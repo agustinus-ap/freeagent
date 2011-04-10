@@ -1,0 +1,27 @@
+= FreeAgent Client
+
+(Unofficial) Ruby client for the {Freeagent Central API}[http://www.freeagentcentral.com/developers/freeagent-api].
+
+
+== Requirements
+
+* Ruby >= 1.8.7
+* ActiveResource 3.0.x
+
+
+== Installation
+
+  $ gem install freeagent
+
+
+== Author
+
+* {Simone Carletti}[http://www.simonecarletti.com] <weppos@weppos.net>
+
+
+== License
+
+FreeAgent (the Client) is Copyright (c) 2011 Simone Carletti.
+This is Free Software distributed under the MIT license.
+
+FreeAgent Online Accounting Software is Copyright (c) by FreeAgent Central.

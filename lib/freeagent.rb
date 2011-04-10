@@ -1,0 +1,3 @@
+module Freeagent
+  # Your code goes here...
+end
