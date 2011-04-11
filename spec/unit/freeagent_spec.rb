@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Freeagent do
+describe FreeAgent do
 
   before(:each) do
-    Freeagent::Base.tap do |base|
+    FreeAgent::Base.tap do |base|
       base.site = base.user = base.password = nil
     end
   end

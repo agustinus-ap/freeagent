@@ -1,4 +1,4 @@
-module Freeagent
+module FreeAgent
 
   # Holds information about library version.
   module Version

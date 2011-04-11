@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "freeagent/version"
+require "free_agent/version"
 
 Gem::Specification.new do |s|
   s.name        = "freeagent"
-  s.version     = Freeagent::VERSION
+  s.version     = FreeAgent::VERSION
   s.summary     = ""
   s.description = ""
 

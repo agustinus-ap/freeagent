@@ -1,6 +1,6 @@
 = FreeAgent Client
 
-(Unofficial) Ruby client for the {Freeagent Central API}[http://www.freeagentcentral.com/developers/freeagent-api].
+(Unofficial) Ruby client for the {FreeAgent Central API}[http://www.freeagentcentral.com/developers/freeagent-api].
 
 
 == Requirements

@@ -1,4 +1,4 @@
-module Freeagent
+module FreeAgent
 
   class Base < ActiveResource::Base
   end
