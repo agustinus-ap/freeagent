@@ -4,7 +4,7 @@ require 'free_agent/base'
 
 module FreeAgent
 
-  BASE_URI = "https://%s.freeagent.com"
+  BASE_URI = "https://%s.freeagentcentral.com"
 
   autoload :Contact,    'free_agent/contact'
 
