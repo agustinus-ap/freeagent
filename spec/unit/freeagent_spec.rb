@@ -2,6 +2,12 @@ require 'spec_helper'
 
 describe Freeagent do
 
+  before(:each) do
+    Freeagent::Base.tap do |base|
+      base.site = base.user = base.password = nil
+    end
+  end
+
   describe ".configured?" do
     it "returns true when Base.user, Base.password, Base.site are configured" do
       klass.configured?.should be_false

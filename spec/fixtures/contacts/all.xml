@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts type="array">
+  <contact>
+    <id type="integer">4338540</id>
+    <organisation-name></organisation-name>
+    <first-name>John</first-name>
+    <last-name>Doe</last-name>
+    <email>john@example.com</email>
+    <billing-email></billing-email>
+    <phone-number></phone-number>
+    <address1></address1>
+    <town></town>
+    <region></region>
+    <postcode></postcode>
+    <address2></address2>
+    <address3></address3>
+    <contact-name-on-invoices type="boolean">true</contact-name-on-invoices>
+    <country>Italy</country>
+    <sales-tax-registration-number></sales-tax-registration-number>
+    <locale>en</locale>
+    <mobile></mobile>
+    <account-balance>0.0</account-balance>
+    <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
+  </contact>
+  <contact>
+    <id type="integer">20000</id>
+    <organisation-name>Wonderland</organisation-name>
+    <first-name>Alice</first-name>
+    <last-name></last-name>
+    <email></email>
+    <billing-email></billing-email>
+    <phone-number></phone-number>
+    <address1></address1>
+    <town></town>
+    <region></region>
+    <postcode></postcode>
+    <address2></address2>
+    <address3></address3>
+    <contact-name-on-invoices type="boolean">true</contact-name-on-invoices>
+    <country>Italy</country>
+    <sales-tax-registration-number></sales-tax-registration-number>
+    <locale>en</locale>
+    <mobile></mobile>
+    <account-balance>0.0</account-balance>
+    <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
+  </contact>
+</contacts>

@@ -22,8 +22,12 @@ RSpec.configure do |config|
   # config.mock_with :rr
 
   config.before(:each) do
-    Freeagent::Base.tap do |base|
-      base.site = base.user = base.password = nil
+    Freeagent.configure do |config|
+      config.username   = "email@example.com"
+      config.password   = "letmein"
+      config.subdomain  = "example"
     end
+
+    Freeagent::Base.site = "http://localhost:11988"
   end
 end
