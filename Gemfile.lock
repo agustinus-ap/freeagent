@@ -43,7 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeresource (~> 3.0.0)
+  activeresource (>= 3.0.0)
   freeagent!
   mimic
   rspec (~> 2.5.0)
