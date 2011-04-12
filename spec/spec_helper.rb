@@ -19,7 +19,7 @@ end
 Dir[File.join(SPEC_ROOT, "support/**/*.rb")].each { |f| require f }
 
 RSpec.configure do |config|
-  # config.mock_with :rr
+  config.mock_with :rr
 
   config.before(:each) do
     FreeAgent.configure do |config|

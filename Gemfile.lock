@@ -25,6 +25,7 @@ GEM
       sinatra
     plist (3.1.0)
     rack (1.2.2)
+    rr (1.0.2)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -46,5 +47,6 @@ DEPENDENCIES
   activeresource (>= 3.0.0)
   freeagent!
   mimic
+  rr
   rspec (~> 2.5.0)
   yard
