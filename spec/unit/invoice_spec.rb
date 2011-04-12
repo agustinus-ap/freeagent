@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FreeAgent::Contact do
+describe FreeAgent::Invoice do
 
   it "extends FreeAgent::Base" do
     klass.superclass.should == FreeAgent::Base
@@ -8,19 +8,19 @@ describe FreeAgent::Contact do
 
   describe "paths" do
     it "has correct collection path" do
-      FreeAgent::Contact.collection_path.should == '/contacts.xml'
+      FreeAgent::Invoice.collection_path.should == '/invoices.xml'
     end
 
     it "has correct element path" do
-      FreeAgent::Contact.element_path(:first).should == '/contacts/first.xml'
-      FreeAgent::Contact.element_path(100000).should == '/contacts/100000.xml'
+      FreeAgent::Invoice.element_path(:first).should == '/invoices/first.xml'
+      FreeAgent::Invoice.element_path(100000).should == '/invoices/100000.xml'
     end
   end
 
 
   describe ".all" do
     before(:each) do
-      @invoices = FreeAgent::Contact.all
+      @invoices = FreeAgent::Invoice.all
     end
 
     it "returns an array" do
@@ -29,25 +29,25 @@ describe FreeAgent::Contact do
 
     it "returns the contacts" do
       @invoices.should have(2).contacts
-      @invoices.first.should be_a(FreeAgent::Contact)
+      @invoices.first.should be_a(FreeAgent::Invoice)
     end
   end
 
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @invoice = FreeAgent::Contact.find(2)
+        @invoice = FreeAgent::Invoice.find(2)
       end
 
       it "returns a Contact" do
-        @invoice.should be_a(FreeAgent::Contact)
+        @invoice.should be_a(FreeAgent::Invoice)
       end
     end
 
     context "when the record does not exist" do
       it "raises a ResourceNotFound error" do
         lambda do
-          FreeAgent::Contact.find(1)
+          FreeAgent::Invoice.find(1)
         end.should raise_error(ActiveResource::ResourceNotFound)
       end
     end

@@ -11,6 +11,10 @@ Mimic.mimic do
   end
 
   get('/contacts.xml').returning        fixture('contacts/all.xml')
-  get('/contacts/10000.xml').returning  "", 404
-  get('/contacts/20000.xml').returning  fixture('contacts/single.xml')
+  get('/contacts/1.xml').returning      "", 404
+  get('/contacts/2.xml').returning      fixture('contacts/single.xml')
+
+  get('/invoices.xml').returning        fixture('invoices/all.xml')
+  get('/invoices/1.xml').returning      "", 404
+  get('/invoices/2.xml').returning      fixture('invoices/single.xml')
 end

@@ -7,6 +7,7 @@ module FreeAgent
   BASE_URI = "https://%s.freeagentcentral.com"
 
   autoload :Contact,    'free_agent/contact'
+  autoload :Invoice,    'free_agent/invoice'
 
 
   class << self

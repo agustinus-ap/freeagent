@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts type="array">
   <contact>
-    <id type="integer">4338540</id>
+    <id type="integer">433858</id>
     <organisation-name></organisation-name>
     <first-name>John</first-name>
     <last-name>Doe</last-name>
@@ -23,7 +23,7 @@
     <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
   </contact>
   <contact>
-    <id type="integer">20000</id>
+    <id type="integer">433859</id>
     <organisation-name>Wonderland</organisation-name>
     <first-name>Alice</first-name>
     <last-name></last-name>
