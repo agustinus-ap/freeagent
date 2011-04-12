@@ -34,6 +34,13 @@ Mimic.mimic do
   get('/invoices/1.xml').returning        "", 404
   get('/invoices/2.xml').returning        fixture('invoices/single.xml')
 
+  get('/invoices/1/*') do
+    [404, {}, []]
+  end
+  get('/invoices/2/invoice_items.xml').returning      fixture('invoice_items/all.xml')
+  get('/invoices/2/invoice_items/1.xml').returning    "", 404
+  get('/invoices/2/invoice_items/2.xml').returning    fixture('invoice_items/single.xml')
+
   get('/projects.xml').returning          fixture('projects/all.xml')
   get('/projects/1.xml').returning        "", 404
   get('/projects/2.xml').returning        fixture('projects/single.xml')

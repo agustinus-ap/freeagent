@@ -11,6 +11,7 @@ module FreeAgent
   autoload :Bill,         'free_agent/bill'
   autoload :Contact,      'free_agent/contact'
   autoload :Invoice,      'free_agent/invoice'
+  autoload :InvoiceItem,  'free_agent/invoice_item'
   autoload :Project,      'free_agent/project'
 
 

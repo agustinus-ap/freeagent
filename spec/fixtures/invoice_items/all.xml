@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice-items type="array">
+  <invoice-item>
+    <id type="integer">3257802</id>
+    <description>Domains April.</description>
+    <project-id type="integer" nil="true"></project-id>
+    <invoice-id type="integer">2593747</invoice-id>
+    <item-type>-no unit-</item-type>
+    <price type="decimal">0.4</price>
+    <quantity type="decimal">40.0</quantity>
+    <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+    <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+    <nominal-code>001</nominal-code>
+  </invoice-item>
+</invoice-items>
