@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bills type="array">
+  <bill>
+    <id type="integer">157528</id>
+    <contact-id type="integer">436186</contact-id>
+    <reference>USD122</reference>
+    <dated-on type="datetime">2011-04-01T00:00:00+00:00</dated-on>
+    <due-date type="datetime">2011-04-30T00:00:00+00:00</due-date>
+    <bill-type>Accountancy Fees</bill-type>
+    <comments>To be paid ASAP.</comments>
+    <depreciation-schedule>3 Years</depreciation-schedule>
+    <total-value type="decimal">140.0</total-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+    <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+    <manual-sales-tax-amount type="decimal">0.0</manual-sales-tax-amount>
+    <recurring></recurring>
+    <status>Open</status>
+  </bill>
+  <bill>
+    <id type="integer">157514</id>
+    <contact-id type="integer">436186</contact-id>
+    <reference>USD100</reference>
+    <dated-on type="datetime">2011-01-04T00:00:00+00:00</dated-on>
+    <due-date type="datetime">2011-01-31T00:00:00+00:00</due-date>
+    <bill-type>Accountancy Fees</bill-type>
+    <comments></comments>
+    <depreciation-schedule>3 Years</depreciation-schedule>
+    <total-value type="decimal">5000.0</total-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+    <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+    <manual-sales-tax-amount type="decimal">0.0</manual-sales-tax-amount>
+    <recurring></recurring>
+    <status>Paid</status>
+  </bill>
+</bills>

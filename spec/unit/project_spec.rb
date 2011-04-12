@@ -28,7 +28,7 @@ describe FreeAgent::Project do
     end
 
     it "returns the projects" do
-      @projects.should have(1).attachments
+      @projects.should have(1).records
       @projects.first.should be_a(FreeAgent::Project)
     end
   end

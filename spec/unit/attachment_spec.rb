@@ -28,7 +28,7 @@ describe FreeAgent::Attachment do
     end
 
     it "returns the attachments" do
-      @attachments.should have(2).attachments
+      @attachments.should have(2).records
       @attachments.first.should be_a(FreeAgent::Attachment)
     end
   end

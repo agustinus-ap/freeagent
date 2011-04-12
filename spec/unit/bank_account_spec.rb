@@ -28,7 +28,7 @@ describe FreeAgent::BankAccount do
     end
 
     it "returns the bank accounts" do
-      @bank_accounts.should have(3).contacts
+      @bank_accounts.should have(3).records
       @bank_accounts.first.should be_a(FreeAgent::BankAccount)
     end
   end

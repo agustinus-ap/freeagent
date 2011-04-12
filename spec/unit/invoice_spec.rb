@@ -28,7 +28,7 @@ describe FreeAgent::Invoice do
     end
 
     it "returns the invoices" do
-      @invoices.should have(2).contacts
+      @invoices.should have(2).records
       @invoices.first.should be_a(FreeAgent::Invoice)
     end
   end

@@ -28,7 +28,7 @@ describe FreeAgent::Contact do
     end
 
     it "returns the contacts" do
-      @contacts.should have(2).contacts
+      @contacts.should have(2).records
       @contacts.first.should be_a(FreeAgent::Contact)
     end
   end

@@ -8,6 +8,7 @@ module FreeAgent
 
   autoload :Attachment,   'free_agent/attachment'
   autoload :BankAccount,  'free_agent/bank_account'
+  autoload :Bill,         'free_agent/bill'
   autoload :Contact,      'free_agent/contact'
   autoload :Invoice,      'free_agent/invoice'
   autoload :Project,      'free_agent/project'

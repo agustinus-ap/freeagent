@@ -1,10 +1,10 @@
 require 'mimic'
 
-Mimic.mimic do
+def fixture(*path)
+  File.read(File.join(SPEC_ROOT, 'fixtures', *path))
+end
 
-  def fixture(*path)
-    File.read(File.join(SPEC_ROOT, 'fixtures', *path))
-  end
+Mimic.mimic do
 
   use Rack::Auth::Basic do |username, password|
     username == 'email@example.com' and password == 'letmein'
@@ -17,6 +17,14 @@ Mimic.mimic do
   get('/bank_accounts.xml').returning     fixture('bank_accounts/all.xml')
   get('/bank_accounts/1.xml').returning   "", 404
   get('/bank_accounts/2.xml').returning   fixture('bank_accounts/single.xml')
+
+  get('/bills.xml') do
+    return [400, {}, []] unless params[:period]
+
+    [200, {}, fixture('bills/all.xml')]
+  end
+  get('/bills/1.xml').returning           "", 404
+  get('/bills/2.xml').returning           fixture('bills/single.xml')
 
   get('/contacts.xml').returning          fixture('contacts/all.xml')
   get('/contacts/1.xml').returning        "", 404
