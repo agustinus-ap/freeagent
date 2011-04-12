@@ -20,27 +20,27 @@ describe FreeAgent::Contact do
 
   describe ".all" do
     before(:each) do
-      @attachments = FreeAgent::Contact.all
+      @contacts = FreeAgent::Contact.all
     end
 
     it "returns an array" do
-      @attachments.should be_a(Array)
+      @contacts.should be_a(Array)
     end
 
     it "returns the contacts" do
-      @attachments.should have(2).contacts
-      @attachments.first.should be_a(FreeAgent::Contact)
+      @contacts.should have(2).contacts
+      @contacts.first.should be_a(FreeAgent::Contact)
     end
   end
 
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @attachment = FreeAgent::Contact.find(2)
+        @contacts = FreeAgent::Contact.find(2)
       end
 
-      it "returns a Contact" do
-        @attachment.should be_a(FreeAgent::Contact)
+      it "returns a contact" do
+        @contacts.should be_a(FreeAgent::Contact)
       end
     end
 

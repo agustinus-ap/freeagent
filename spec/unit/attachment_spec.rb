@@ -27,7 +27,7 @@ describe FreeAgent::Attachment do
       @attachments.should be_a(Array)
     end
 
-    it "returns the contacts" do
+    it "returns the attachments" do
       @attachments.should have(2).attachments
       @attachments.first.should be_a(FreeAgent::Attachment)
     end
@@ -39,7 +39,7 @@ describe FreeAgent::Attachment do
         @attachment = FreeAgent::Attachment.find(2)
       end
 
-      it "returns a Contact" do
+      it "returns an attachment" do
         @attachment.should be_a(FreeAgent::Attachment)
       end
     end

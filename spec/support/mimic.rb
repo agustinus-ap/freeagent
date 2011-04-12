@@ -10,15 +10,19 @@ Mimic.mimic do
     username == 'email@example.com' and password == 'letmein'
   end
 
-  get('/attachments.xml').returning     fixture('attachments/all.xml')
-  get('/attachments/1.xml').returning   "", 404
-  get('/attachments/2.xml').returning   fixture('attachments/single.xml')
+  get('/attachments.xml').returning       fixture('attachments/all.xml')
+  get('/attachments/1.xml').returning     "", 404
+  get('/attachments/2.xml').returning     fixture('attachments/single.xml')
 
-  get('/contacts.xml').returning        fixture('contacts/all.xml')
-  get('/contacts/1.xml').returning      "", 404
-  get('/contacts/2.xml').returning      fixture('contacts/single.xml')
+  get('/bank_accounts.xml').returning     fixture('bank_accounts/all.xml')
+  get('/bank_accounts/1.xml').returning   "", 404
+  get('/bank_accounts/2.xml').returning   fixture('bank_accounts/single.xml')
 
-  get('/invoices.xml').returning        fixture('invoices/all.xml')
-  get('/invoices/1.xml').returning      "", 404
-  get('/invoices/2.xml').returning      fixture('invoices/single.xml')
+  get('/contacts.xml').returning          fixture('contacts/all.xml')
+  get('/contacts/1.xml').returning        "", 404
+  get('/contacts/2.xml').returning        fixture('contacts/single.xml')
+
+  get('/invoices.xml').returning          fixture('invoices/all.xml')
+  get('/invoices/1.xml').returning        "", 404
+  get('/invoices/2.xml').returning        fixture('invoices/single.xml')
 end

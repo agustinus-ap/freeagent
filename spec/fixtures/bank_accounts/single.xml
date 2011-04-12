@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank-account>
+  <id type="integer">85327</id>
+  <type>StandardBankAccount</type>
+  <name>Business Checking Account</name>
+  <account-number>00000000</account-number>
+  <sort-code>00000000</sort-code>
+  <secondary-sort-code></secondary-sort-code>
+  <iban></iban>
+  <bic></bic>
+  <current-balance type="decimal">5571.18</current-balance>
+  <current-balance-date type="datetime">2011-04-04</current-balance-date>
+  <opening-balance type="decimal">4733.42</opening-balance>
+  <is-personal>false</is-personal>
+</bank-account>

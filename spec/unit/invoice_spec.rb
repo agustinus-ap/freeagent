@@ -20,27 +20,27 @@ describe FreeAgent::Invoice do
 
   describe ".all" do
     before(:each) do
-      @attachments = FreeAgent::Invoice.all
+      @invoices = FreeAgent::Invoice.all
     end
 
     it "returns an array" do
-      @attachments.should be_a(Array)
+      @invoices.should be_a(Array)
     end
 
-    it "returns the contacts" do
-      @attachments.should have(2).contacts
-      @attachments.first.should be_a(FreeAgent::Invoice)
+    it "returns the invoices" do
+      @invoices.should have(2).contacts
+      @invoices.first.should be_a(FreeAgent::Invoice)
     end
   end
 
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @attachment = FreeAgent::Invoice.find(2)
+        @invoice = FreeAgent::Invoice.find(2)
       end
 
-      it "returns a Contact" do
-        @attachment.should be_a(FreeAgent::Invoice)
+      it "returns an invoice" do
+        @invoice.should be_a(FreeAgent::Invoice)
       end
     end
 
