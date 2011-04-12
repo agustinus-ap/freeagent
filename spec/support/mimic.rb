@@ -25,4 +25,8 @@ Mimic.mimic do
   get('/invoices.xml').returning          fixture('invoices/all.xml')
   get('/invoices/1.xml').returning        "", 404
   get('/invoices/2.xml').returning        fixture('invoices/single.xml')
+
+  get('/projects.xml').returning          fixture('projects/all.xml')
+  get('/projects/1.xml').returning        "", 404
+  get('/projects/2.xml').returning        fixture('projects/single.xml')
 end

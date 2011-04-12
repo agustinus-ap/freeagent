@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <id type="integer">116526</id>
+  <contact-id type="integer">436186</contact-id>
+  <name>Website</name>
+  <currency>USD</currency>
+  <status>Active</status>
+  <starts-on type="date"></starts-on>
+  <ends-on type="date"></ends-on>
+  <billing-basis type="decimal">8.0</billing-basis>
+  <hours-per-day type="decimal">8.0</hours-per-day>
+  <billing-period>hour</billing-period>
+  <normal-billing-rate>0.0</normal-billing-rate>
+  <budget type="integer">1000</budget>
+  <budget-units>Monetary</budget-units>
+  <uses-project-invoice-sequence type="boolean">false</uses-project-invoice-sequence>
+  <contacts-po-reference></contacts-po-reference>
+  <is-ir35 type="boolean"></is-ir35>
+  <notes-count type="integer">1</notes-count>
+  <basecamp-id type="integer"></basecamp-id>
+  <created-at type="datetime">2011-04-12T18:33:06Z</created-at>
+  <updated-at type="datetime">2011-04-12T18:33:06Z</updated-at>
+</project>

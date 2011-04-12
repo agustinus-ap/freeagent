@@ -10,6 +10,7 @@ module FreeAgent
   autoload :BankAccount,  'free_agent/bank_account'
   autoload :Contact,      'free_agent/contact'
   autoload :Invoice,      'free_agent/invoice'
+  autoload :Project,      'free_agent/project'
 
 
   class << self
