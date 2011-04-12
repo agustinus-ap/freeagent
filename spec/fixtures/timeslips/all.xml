@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timeslips type="array">
+  <timeslip>
+    <id type="integer">5903024</id>
+    <dated-on type="datetime">2011-04-12T00:00:00+00:00</dated-on>
+    <hours type="decimal">1.0</hours>
+    <comment>I did something.</comment>
+    <user-id type="integer">82948</user-id>
+    <project-id type="integer">116526</project-id>
+    <task-id type="integer">186247</task-id>
+    <updated-at type="integer">Tue Apr 12 20:48:43 UTC 2011</updated-at>
+    <status></status>
+  </timeslip>
+  <timeslip>
+    <id type="integer">5903025</id>
+    <dated-on type="datetime">2011-04-12T00:00:00+00:00</dated-on>
+    <hours type="decimal">3.0</hours>
+    <comment>It was a very difficult task!</comment>
+    <user-id type="integer">82948</user-id>
+    <project-id type="integer">116526</project-id>
+    <task-id type="integer">186247</task-id>
+    <updated-at type="integer">Tue Apr 12 20:49:21 UTC 2011</updated-at>
+    <status></status>
+  </timeslip>
+</timeslips>

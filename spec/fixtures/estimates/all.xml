@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estimates type="array">
+  <estimate>
+    <id type="integer">71632</id>
+    <project-id type="integer">116526</project-id>
+    <contact-id type="integer">436186</contact-id>
+    <invoice-id type="integer"></invoice-id>
+    <reference>001</reference>
+    <estimate-type>Proposal</estimate-type>
+    <dated-on type="datetime">2011-04-12T00:00:00+00:00</dated-on>
+    <status>Open</status>
+    <currency>USD</currency>
+    <net-value type="decimal">20.0</net-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <client-contact-name></client-contact-name>
+    <notes>
+      <![CDATA[I suggest to change hosting.]]>
+    </notes>
+    <omit-header type="boolean">false</omit-header>
+    <created-at type="datetime">2011-04-12T20:52:18Z</created-at>
+    <updated-at type="datetime">2011-04-12T20:52:59Z</updated-at>
+    <ec-status></ec-status>
+    <estimate-items type="array">
+      <estimate-item>
+        <category-id type="integer">39986</category-id>
+        <description>Hosting selection.</description>
+        <estimate-id type="integer">71632</estimate-id>
+        <id type="integer">178108</id>
+        <item-type>Hours</item-type>
+        <price type="decimal">10.0</price>
+        <quantity type="decimal">2.0</quantity>
+        <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+        <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+        <stock-item-id type="integer" nil="true"></stock-item-id>
+      </estimate-item>
+    </estimate-items>
+  </estimate>
+</estimates>

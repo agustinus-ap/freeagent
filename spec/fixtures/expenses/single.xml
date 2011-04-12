@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expense>
+  <id type="integer">536969</id>
+  <user-id type="integer">82948</user-id>
+  <expense-type>Miscellaneous</expense-type>
+  <dated-on type="date">2011-04-12T00:00:00Z</dated-on>
+  <gross-value type="decimal">-1000.0</gross-value>
+  <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+  <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+  <description>Holiday</description>
+  <depreciation-schedule>3 Years</depreciation-schedule>
+  <ec-status></ec-status>
+  <engine-size-index type="integer">1</engine-size-index>
+  <engine-type-index type="integer">0</engine-type-index>
+  <vehicle-type></vehicle-type>
+  <have-vat-receipt type="boolean">true</have-vat-receipt>
+  <initial-rate-mileage type="integer">0</initial-rate-mileage>
+  <manual-sales-tax-amount type="decimal">0.0</manual-sales-tax-amount>
+  <mileage type="integer"></mileage>
+  <project-id type="integer"></project-id>
+  <rebill-factor type="decimal">0.0</rebill-factor>
+  <rebill-mileage-rate type="decimal">0.4</rebill-mileage-rate>
+  <reclaim-mileage-rate type="decimal">0.4</reclaim-mileage-rate>
+  <rebill-type></rebill-type>
+  <rebilled-on-invoice-item-id type="integer"></rebilled-on-invoice-item-id>
+  <rebill-to-project-id type="integer"></rebill-to-project-id>
+  <receipt-reference></receipt-reference>
+  <recurring></recurring>
+  <recurring-end-date type="date"></recurring-end-date>
+  <updated-at type="datetime">2011-04-12T20:56:47Z</updated-at>
+</expense>
