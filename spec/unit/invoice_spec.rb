@@ -17,6 +17,16 @@ describe FreeAgent::Invoice do
     end
   end
 
+  describe "initialization" do
+    context "from XML" do
+      it "parses the #invoice_items attribute into an array of InvoiceItem" do
+        @invoice = FreeAgent::Invoice.find(2)
+        @invoice.invoice_items.should be_a(Array)
+        @invoice.invoice_items.first.should be_a(FreeAgent::InvoiceItem)
+      end
+    end
+  end
+
 
   describe ".all" do
     before(:each) do
