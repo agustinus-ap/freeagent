@@ -3,7 +3,9 @@
 
 == master
 
-* NEW: Added support for Project#invoices
+* NEW: Added support for Project#invoices.
+
+* NEW: Added support for Task records.
 
 * CHANGED: Added .gemspec description and summary.
 

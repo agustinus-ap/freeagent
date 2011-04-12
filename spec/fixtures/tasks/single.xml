@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<task>
+  <billing-period>hour</billing-period>
+  <billing-rate type="decimal">100.0</billing-rate>
+  <id type="integer">186247</id>
+  <is-billable type="boolean">true</is-billable>
+  <name>Configure Hosting</name>
+  <project-id type="integer">116526</project-id>
+  <status>Active</status>
+</task>

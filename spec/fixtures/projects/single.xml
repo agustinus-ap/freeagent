@@ -16,8 +16,8 @@
   <uses-project-invoice-sequence type="boolean">false</uses-project-invoice-sequence>
   <contacts-po-reference></contacts-po-reference>
   <is-ir35 type="boolean"></is-ir35>
-  <notes-count type="integer">1</notes-count>
+  <notes-count type="integer">2</notes-count>
   <basecamp-id type="integer"></basecamp-id>
   <created-at type="datetime">2011-04-12T18:33:06Z</created-at>
-  <updated-at type="datetime">2011-04-12T18:33:06Z</updated-at>
+  <updated-at type="datetime">2011-04-12T20:53:39Z</updated-at>
 </project>

@@ -13,6 +13,7 @@ module FreeAgent
   autoload :Invoice,      'free_agent/invoice'
   autoload :InvoiceItem,  'free_agent/invoice_item'
   autoload :Project,      'free_agent/project'
+  autoload :Task,         'free_agent/task'
 
 
   class << self

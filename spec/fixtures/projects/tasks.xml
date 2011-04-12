@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks type="array">
+  <task>
+    <billing-period>hour</billing-period>
+    <billing-rate type="decimal">100.0</billing-rate>
+    <id type="integer">186247</id>
+    <is-billable type="boolean">true</is-billable>
+    <name>Configure Hosting</name>
+    <project-id type="integer">116526</project-id>
+    <status>Active</status>
+  </task>
+  <task>
+    <billing-period>hour</billing-period>
+    <billing-rate type="decimal">0.0</billing-rate>
+    <id type="integer">186246</id>
+    <is-billable type="boolean">false</is-billable>
+    <name>Purchase Hosting</name>
+    <project-id type="integer">116526</project-id>
+    <status>Active</status>
+  </task>
+  <task>
+    <billing-period>hour</billing-period>
+    <billing-rate type="decimal">100.0</billing-rate>
+    <id type="integer">186248</id>
+    <is-billable type="boolean">true</is-billable>
+    <name>Wireframe</name>
+    <project-id type="integer">116526</project-id>
+    <status>Completed</status>
+  </task>
+</tasks>
