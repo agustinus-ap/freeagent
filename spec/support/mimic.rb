@@ -10,6 +10,10 @@ Mimic.mimic do
     username == 'email@example.com' and password == 'letmein'
   end
 
+  get('/attachments.xml').returning     fixture('attachments/all.xml')
+  get('/attachments/1.xml').returning   "", 404
+  get('/attachments/2.xml').returning   fixture('attachments/single.xml')
+
   get('/contacts.xml').returning        fixture('contacts/all.xml')
   get('/contacts/1.xml').returning      "", 404
   get('/contacts/2.xml').returning      fixture('contacts/single.xml')

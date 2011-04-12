@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe FreeAgent::Contact do
+describe FreeAgent::Attachment do
 
   it "extends FreeAgent::Base" do
     klass.superclass.should == FreeAgent::Base
@@ -8,19 +8,19 @@ describe FreeAgent::Contact do
 
   describe "paths" do
     it "has correct collection path" do
-      FreeAgent::Contact.collection_path.should == '/contacts.xml'
+      FreeAgent::Attachment.collection_path.should == '/attachments.xml'
     end
 
     it "has correct element path" do
-      FreeAgent::Contact.element_path(:first).should == '/contacts/first.xml'
-      FreeAgent::Contact.element_path(100000).should == '/contacts/100000.xml'
+      FreeAgent::Attachment.element_path(:first).should == '/attachments/first.xml'
+      FreeAgent::Attachment.element_path(100000).should == '/attachments/100000.xml'
     end
   end
 
 
   describe ".all" do
     before(:each) do
-      @attachments = FreeAgent::Contact.all
+      @attachments = FreeAgent::Attachment.all
     end
 
     it "returns an array" do
@@ -28,26 +28,26 @@ describe FreeAgent::Contact do
     end
 
     it "returns the contacts" do
-      @attachments.should have(2).contacts
-      @attachments.first.should be_a(FreeAgent::Contact)
+      @attachments.should have(2).attachments
+      @attachments.first.should be_a(FreeAgent::Attachment)
     end
   end
 
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @attachment = FreeAgent::Contact.find(2)
+        @attachment = FreeAgent::Attachment.find(2)
       end
 
       it "returns a Contact" do
-        @attachment.should be_a(FreeAgent::Contact)
+        @attachment.should be_a(FreeAgent::Attachment)
       end
     end
 
     context "when the record does not exist" do
       it "raises a ResourceNotFound error" do
         lambda do
-          FreeAgent::Contact.find(1)
+          FreeAgent::Attachment.find(1)
         end.should raise_error(ActiveResource::ResourceNotFound)
       end
     end

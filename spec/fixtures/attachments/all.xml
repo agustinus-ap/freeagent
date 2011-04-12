@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<attachments type="array">
+  <attachment location="https://s3.amazonaws.com/freeagent-prod/attachments/165002/original.pdf?AWSAccessKeyId=00000000000000000000&amp;Expires=1302622321&amp;Signature=008SugGf4dWD05ZPaZHSt6R%2BCPA%3D">
+    <id type="integer">165002</id>
+    <content-type>application/pdf</content-type>
+    <file-name>Invoice-USD100_20100104.pdf</file-name>
+    <file-size type="integer">9214</file-size>
+    <description>Invoice</description>
+    <attachable-id type="integer">157514</attachable-id>
+    <attachable-type>Bill</attachable-type>
+    <processing>false</processing>
+  </attachment>
+  <attachment location="https://s3.amazonaws.com/freeagent-prod/attachments/165006/original.pdf?AWSAccessKeyId=00000000000000000000&amp;Expires=1302622321&amp;Signature=00CY0P6sRBhHE4G854lK1seR0Lg%3D">
+    <id type="integer">165006</id>
+    <content-type>application/pdf</content-type>
+    <file-name>Invoice-USD122_20110401.pdf</file-name>
+    <file-size type="integer">33653</file-size>
+    <description>Invoice</description>
+    <attachable-id type="integer">157528</attachable-id>
+    <attachable-type>Bill</attachable-type>
+    <processing>false</processing>
+  </attachment>
+</attachments>
