@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.authors     = ["Simone Carletti"]
   s.email       = ["weppos@weppos.net"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/weppos/freeagent"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
