@@ -58,7 +58,7 @@ describe FreeAgent::InvoiceItem do
   context "when the invoice does not exist" do
     describe ".all" do
       it "raises a ResourceNotFound error" do
-        pending 'ActiveResource returns nil'
+        pending 'ActiveResource rescues the error and returns nil'
         lambda do
           FreeAgent::InvoiceItem.all(:params => { :invoice_id => 1 })
         end.should raise_error(ActiveResource::ResourceNotFound)

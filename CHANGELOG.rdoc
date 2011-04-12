@@ -3,6 +3,8 @@
 
 == master
 
+* NEW: Added support for Project#invoices
+
 * CHANGED: Added .gemspec description and summary.
 
 

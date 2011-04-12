@@ -53,4 +53,38 @@ describe FreeAgent::Project do
     end
   end
 
+  describe "#invoices" do
+    it "merges the finder options" do
+      mock(FreeAgent::Invoice).all(:from => '/projects/0/invoices.xml')
+      FreeAgent::Project.new(:id => 0).invoices
+
+      mock(FreeAgent::Invoice).all(:from => '/projects/0/invoices.xml', :params => { :foo => 'bar' })
+      FreeAgent::Project.new(:id => 0).invoices(:params => { :foo => 'bar' })
+    end
+
+    context "when the project exists" do
+      before(:each) do
+        @invoices = FreeAgent::Project.new(:id => 2).invoices
+      end
+
+      it "returns an array" do
+        @invoices.should be_a(Array)
+      end
+
+      it "returns the invoices" do
+        @invoices.should have(1).records
+        @invoices.first.should be_a(FreeAgent::Invoice)
+      end
+    end
+
+    context "when the project does not exist" do
+      it "raises a ResourceNotFound error" do
+        pending 'ActiveResource rescues the error and returns nil'
+        lambda do
+          FreeAgent::Project.new(:id => 1).invoices
+        end.should raise_error(ActiveResource::ResourceNotFound)
+      end
+    end
+  end
+
 end

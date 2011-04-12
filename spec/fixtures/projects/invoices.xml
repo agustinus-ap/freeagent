@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices type="array">
+  <invoice>
+    <id type="integer">2596843</id>
+    <company-id type="integer">46781</company-id>
+    <project-id type="integer">116526</project-id>
+    <contact-id type="integer">436186</contact-id>
+    <dated-on type="datetime">2011-04-12T00:00:00Z</dated-on>
+    <due-on type="datetime">2011-05-12T00:00:00Z</due-on>
+    <reference>001</reference>
+    <currency>USD</currency>
+    <exchange-rate>1.0</exchange-rate>
+    <net-value type="decimal">1000.0</net-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <second-sales-tax-value type="decimal">0.0</second-sales-tax-value>
+    <status>Open</status>
+    <comments>Wireframes.</comments>
+    <discount-percent type="decimal"></discount-percent>
+    <po-reference></po-reference>
+    <omit-header type="boolean">false</omit-header>
+    <payment-terms-in-days type="integer">30</payment-terms-in-days>
+    <written-off-date type="datetime"></written-off-date>
+    <ec-status></ec-status>
+    <invoice-items type="array">
+      <invoice-item>
+        <id type="integer">3264458</id>
+        <description>Wireframes.</description>
+        <project-id type="integer" nil="true"></project-id>
+        <invoice-id type="integer">2596843</invoice-id>
+        <item-type>Hours</item-type>
+        <price type="decimal">100.0</price>
+        <quantity type="decimal">10.0</quantity>
+        <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+        <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+        <nominal-code>001</nominal-code>
+      </invoice-item>
+    </invoice-items>
+  </invoice>
+</invoices>
