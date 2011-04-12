@@ -1,6 +1,11 @@
 = Changelog
 
 
+== master
+
+* CHANGED: Added .gemspec description and summary.
+
+
 == Release 0.1.0
 
 * Initial version
