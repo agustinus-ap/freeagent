@@ -36,7 +36,7 @@ describe FreeAgent::BankAccount do
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @bank_account = FreeAgent::BankAccount.find(2)
+        @bank_account = FreeAgent::BankAccount.find(84192)
       end
 
       it "returns a bank account" do

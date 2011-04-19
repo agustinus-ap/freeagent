@@ -14,9 +14,9 @@ Mimic.mimic do
   get('/attachments/1.xml').returning     "", 404
   get('/attachments/2.xml').returning     fixture('attachments/single.xml')
 
-  get('/bank_accounts.xml').returning     fixture('bank_accounts/all.xml')
-  get('/bank_accounts/1.xml').returning   "", 404
-  get('/bank_accounts/2.xml').returning   fixture('bank_accounts/single.xml')
+  get('/bank_accounts.xml').returning         fixture('bank_accounts/all.xml')
+  get('/bank_accounts/1.xml').returning       "", 404
+  get('/bank_accounts/84192.xml').returning   fixture('bank_accounts/single.xml')
 
   get('/bills.xml') do
     return [400, {}, []] unless params[:period]
