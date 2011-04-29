@@ -36,7 +36,7 @@ describe FreeAgent::Contact do
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @contacts = FreeAgent::Contact.find(2)
+        @contacts = FreeAgent::Contact.find(447693)
       end
 
       it "returns a contact" do
