@@ -18,6 +18,35 @@ describe FreeAgent::Contact do
   end
 
 
+  describe "validations" do
+    it "requires either name or organisation_name" do
+      c = klass.new
+      c.should_not be_valid
+      c.errors[:first_name].should_not be_nil
+      c.errors[:last_name].should_not be_nil
+      c.errors[:organisation_name].should_not be_nil
+
+      c = klass.new(:last_name => "Carletti")
+      c.should_not be_valid
+      c.errors[:first_name].should_not be_nil
+
+      c = klass.new(:first_name => "Simone")
+      c.should_not be_valid
+      c.errors[:last_name].should_not be_nil
+    end
+
+    it "is valid with name" do
+      c = klass.new(:first_name => "Simone", :last_name => "Carletti")
+      c.should be_valid
+    end
+
+    it "is valid with organisation_name" do
+      c = klass.new(:organisation_name => "Company")
+      c.should be_valid
+    end
+  end
+
+
   describe ".all" do
     before(:each) do
       @contacts = FreeAgent::Contact.all
@@ -50,6 +79,28 @@ describe FreeAgent::Contact do
           FreeAgent::Contact.find(1)
         end.should raise_error(ActiveResource::ResourceNotFound)
       end
+    end
+  end
+
+
+  describe "#name" do
+    it "returns nil when no first_name and last_name" do
+      klass.new.name.should be_nil
+    end
+
+    it "returns the first_name when first_name" do
+      klass.new(:last_name => "Carletti").
+          name.should == "Carletti"
+    end
+
+    it "returns the first_name when first_name" do
+      klass.new(:first_name => "Simone").
+          name.should == "Simone"
+    end
+
+    it "returns first_name and last name" do
+      klass.new(:first_name => "Simone", :last_name => "Carletti").
+          name.should == "Simone Carletti"
     end
   end
 
