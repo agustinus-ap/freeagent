@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts type="array">
+  <contact>
+    <id type="integer">447695</id>
+    <organisation-name>Fulp Corporation</organisation-name>
+    <first-name>Darren</first-name>
+    <last-name>Fulp</last-name>
+    <email>fulp@example.com</email>
+    <billing-email>billing@example.com</billing-email>
+    <phone-number></phone-number>
+    <address1></address1>
+    <town></town>
+    <region></region>
+    <postcode></postcode>
+    <address2></address2>
+    <address3></address3>
+    <contact-name-on-invoices type="boolean">true</contact-name-on-invoices>
+    <country>United States</country>
+    <sales-tax-registration-number></sales-tax-registration-number>
+    <locale>en</locale>
+    <mobile></mobile>
+    <account-balance>0.0</account-balance>
+    <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
+  </contact>
+  <contact>
+    <id type="integer">447692</id>
+    <organisation-name></organisation-name>
+    <first-name>Max</first-name>
+    <last-name>Milbourne</last-name>
+    <email></email>
+    <billing-email></billing-email>
+    <phone-number></phone-number>
+    <address1></address1>
+    <town></town>
+    <region></region>
+    <postcode></postcode>
+    <address2></address2>
+    <address3></address3>
+    <contact-name-on-invoices type="boolean">true</contact-name-on-invoices>
+    <country>United States</country>
+    <sales-tax-registration-number></sales-tax-registration-number>
+    <locale>en</locale>
+    <mobile></mobile>
+    <account-balance>0.0</account-balance>
+    <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
+  </contact>
+  <contact>
+    <id type="integer">447693</id>
+    <organisation-name>Robicheaux Inc</organisation-name>
+    <first-name>Julio</first-name>
+    <last-name>Robicheaux</last-name>
+    <email>julio.robicheaux@example.com</email>
+    <billing-email></billing-email>
+    <phone-number></phone-number>
+    <address1></address1>
+    <town></town>
+    <region></region>
+    <postcode></postcode>
+    <address2></address2>
+    <address3></address3>
+    <contact-name-on-invoices type="boolean">true</contact-name-on-invoices>
+    <country>Japan</country>
+    <sales-tax-registration-number></sales-tax-registration-number>
+    <locale>en</locale>
+    <mobile></mobile>
+    <account-balance>0.0</account-balance>
+    <uses-contact-invoice-sequence type="boolean">false</uses-contact-invoice-sequence>
+  </contact>
+</contacts>
