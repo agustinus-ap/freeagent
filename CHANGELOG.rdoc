@@ -9,6 +9,8 @@
 
 * NEW: Added Contact validations.
 
+* NEW: Added Dynamic Finders feature.
+
 * CHANGED: Added .gemspec description and summary.
 
 
