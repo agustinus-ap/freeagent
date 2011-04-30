@@ -1,6 +1,13 @@
 = FreeAgent Client
 
-(Unofficial) Ruby client for the {FreeAgent Central API}[http://www.freeagentcentral.com/developers/freeagent-api].
+(Unofficial) Ruby client for the {FreeAgent}[http://fre.ag/4103hsny] accounting software.
+
+
+== Status
+
+This library is a work in progress.
+
+Visit the {FreeAgent Central API}[http://www.freeagentcentral.com/developers/freeagent-api] page to learn more about FreeAgent API.
 
 
 == Requirements
@@ -17,6 +24,11 @@
 == Author
 
 * {Simone Carletti}[http://www.simonecarletti.com] <weppos@weppos.net>
+
+
+== Promo
+
+Sign up with this {promo link}[http://fre.ag/4103hsny] and save 10% on the standard FreeAgent monthly price... forever!
 
 
 == License
