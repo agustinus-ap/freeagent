@@ -1,9 +1,5 @@
 require 'mimic'
 
-def fixture(*path)
-  File.read(File.join(SPEC_ROOT, 'fixtures', *path))
-end
-
 Mimic.mimic do
 
   use Rack::Auth::Basic do |username, password|
@@ -33,7 +29,7 @@ Mimic.mimic do
   get('/invoices.xml').returning          fixture('invoices/all.xml')
   get('/invoices/1.xml').returning        "", 404
   get('/invoices/1/*').returning          "", 404
-  get('/invoices/2.xml').returning        fixture('invoices/single.xml')
+  get('/invoices/2715138.xml').returning  fixture('invoices/single.xml')
   get('/invoices/2/invoice_items.xml').returning      fixture('invoice_items/all.xml')
   get('/invoices/2/invoice_items/1.xml').returning    "", 404
   get('/invoices/2/invoice_items/2.xml').returning    fixture('invoice_items/single.xml')

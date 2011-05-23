@@ -7,12 +7,12 @@ module Helper
     described_class
   end
 
-  def fixture(*name)
-    File.join(SPEC_ROOT, "fixtures", *name)
-  end
-
 end
 
 RSpec.configure do |config|
   config.include Helper
+end
+
+def fixture(*path)
+  File.read(File.join(SPEC_ROOT, 'fixtures', *path))
 end

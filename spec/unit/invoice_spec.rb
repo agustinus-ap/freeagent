@@ -20,7 +20,7 @@ describe FreeAgent::Invoice do
   describe "initialization" do
     context "from XML" do
       it "parses the #invoice_items attribute into an array of InvoiceItem" do
-        @invoice = FreeAgent::Invoice.find(2)
+        @invoice = FreeAgent::Invoice.find(2715138)
         @invoice.invoice_items.should be_a(Array)
         @invoice.invoice_items.first.should be_a(FreeAgent::InvoiceItem)
       end
@@ -38,7 +38,7 @@ describe FreeAgent::Invoice do
     end
 
     it "returns the invoices" do
-      @invoices.should have(2).records
+      @invoices.should have(3).records
       @invoices.first.should be_a(FreeAgent::Invoice)
     end
   end
@@ -46,7 +46,7 @@ describe FreeAgent::Invoice do
   describe ".find(id)" do
     context "when the record exists" do
       before(:each) do
-        @invoice = FreeAgent::Invoice.find(2)
+        @invoice = FreeAgent::Invoice.find(2715138)
       end
 
       it "returns an invoice" do
