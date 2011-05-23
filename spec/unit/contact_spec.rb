@@ -104,4 +104,39 @@ describe FreeAgent::Contact do
     end
   end
 
+  describe "#invoices" do
+    it "merges the finder options" do
+      mock(FreeAgent::Invoice).all(:from => '/contacts/0/invoices.xml')
+      FreeAgent::Contact.new(:id => 0).invoices
+
+      mock(FreeAgent::Invoice).all(:from => '/contacts/0/invoices.xml', :params => { :foo => 'bar' })
+      FreeAgent::Contact.new(:id => 0).invoices(:params => { :foo => 'bar' })
+    end
+
+    context "when the contact exists" do
+      before(:each) do
+        @invoices = FreeAgent::Contact.new(:id => 469012).invoices
+      end
+
+      it "returns an array" do
+        @invoices.should be_a(Array)
+      end
+
+      it "returns the invoices" do
+        @invoices.should have(2).records
+        @invoices.first.should be_a(FreeAgent::Invoice)
+        @invoices.first.id.should == 2715138
+      end
+    end
+
+    context "when the contact does not exist" do
+      it "raises a ResourceNotFound error" do
+        pending 'ActiveResource rescues the error and returns nil'
+        lambda do
+          FreeAgent::Contact.new(:id => 1).invoices
+        end.should raise_error(ActiveResource::ResourceNotFound)
+      end
+    end
+  end
+
 end

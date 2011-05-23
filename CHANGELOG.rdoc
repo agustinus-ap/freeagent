@@ -11,6 +11,8 @@
 
 * NEW: Added Dynamic Finders feature.
 
+* NEW: Added support for Contact#invoices.
+
 * CHANGED: Added .gemspec description and summary.
 
 

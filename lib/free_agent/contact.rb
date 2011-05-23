@@ -23,9 +23,9 @@ module FreeAgent
     #
     # == Relationships
     #
-    # has_many :bills
-    # has_many :estimates
-    # has_many :projects
+    # - has_many :bills
+    # - has_many :estimates
+    # - has_many :projects
     # has_many :invoices
 
 
@@ -51,6 +51,25 @@ module FreeAgent
 
     alias :name? :name
 
+
+    # Gets all the invoices associated to this contact.
+    #
+    # @overload invoices(options = {})
+    #   Gets all the invoices for this contact.
+    #   @param [Hash] options Hash of options to customize the finder behavior.
+    #   @return [Array<FreeAgent::Invoice>]
+    #
+    # @example Simple query
+    #   contact.invoices
+    #   # => [...]
+    # @example Query with custom find params
+    #   contact.invoices(:params => { :foo => 'bar' }
+    #   # => [...]
+    #
+    def invoices(*args)
+      options = args.extract_options!
+      Invoice.all(options.merge!(:from => "/contacts/#{id}/invoices.xml"))
+    end
   end
 
 end

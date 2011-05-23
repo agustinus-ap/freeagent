@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoices type="array">
+  <invoice>
+    <id type="integer">2715138</id>
+    <company-id type="integer">47603</company-id>
+    <project-id type="integer"></project-id>
+    <contact-id type="integer">469012</contact-id>
+    <dated-on type="datetime">2011-05-23T00:00:00Z</dated-on>
+    <due-on type="datetime">2011-06-02T00:00:00Z</due-on>
+    <reference>003</reference>
+    <currency>USD</currency>
+    <exchange-rate>1.0</exchange-rate>
+    <net-value type="decimal">350.0</net-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <second-sales-tax-value type="decimal">0.0</second-sales-tax-value>
+    <status>Open</status>
+    <comments></comments>
+    <discount-percent type="decimal"></discount-percent>
+    <po-reference></po-reference>
+    <omit-header type="boolean">false</omit-header>
+    <payment-terms-in-days type="integer">10</payment-terms-in-days>
+    <written-off-date type="datetime"></written-off-date>
+    <ec-status></ec-status>
+    <invoice-items type="array">
+      <invoice-item>
+        <id type="integer">3445689</id>
+        <description>Training session.</description>
+        <project-id type="integer" nil="true"></project-id>
+        <invoice-id type="integer">2715138</invoice-id>
+        <item-type>Training</item-type>
+        <price type="decimal">350.0</price>
+        <quantity type="decimal">1.0</quantity>
+        <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+        <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+        <nominal-code>001</nominal-code>
+      </invoice-item>
+    </invoice-items>
+  </invoice>
+  <invoice>
+    <id type="integer">2715142</id>
+    <company-id type="integer">47603</company-id>
+    <project-id type="integer"></project-id>
+    <contact-id type="integer">469012</contact-id>
+    <dated-on type="datetime">2011-05-23T00:00:00Z</dated-on>
+    <due-on type="datetime">2011-05-23T00:00:00Z</due-on>
+    <reference>004</reference>
+    <currency>USD</currency>
+    <exchange-rate>1.0</exchange-rate>
+    <net-value type="decimal">700.0</net-value>
+    <sales-tax-value type="decimal">0.0</sales-tax-value>
+    <second-sales-tax-value type="decimal">0.0</second-sales-tax-value>
+    <status>Paid</status>
+    <comments></comments>
+    <discount-percent type="decimal"></discount-percent>
+    <po-reference></po-reference>
+    <omit-header type="boolean">false</omit-header>
+    <payment-terms-in-days type="integer">0</payment-terms-in-days>
+    <written-off-date type="datetime"></written-off-date>
+    <ec-status></ec-status>
+    <invoice-items type="array">
+      <invoice-item>
+        <id type="integer">3445700</id>
+        <description>Training session.</description>
+        <project-id type="integer" nil="true"></project-id>
+        <invoice-id type="integer">2715142</invoice-id>
+        <item-type>Training</item-type>
+        <price type="decimal">350.0</price>
+        <quantity type="decimal">2.0</quantity>
+        <sales-tax-rate type="decimal">0.0</sales-tax-rate>
+        <second-sales-tax-rate type="decimal">0.0</second-sales-tax-rate>
+        <nominal-code>001</nominal-code>
+      </invoice-item>
+    </invoice-items>
+  </invoice>
+</invoices>

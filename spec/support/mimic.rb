@@ -22,9 +22,11 @@ Mimic.mimic do
   get('/bills/1.xml').returning           "", 404
   get('/bills/2.xml').returning           fixture('bills/single.xml')
 
-  get('/contacts.xml').returning          fixture('contacts/all.xml')
-  get('/contacts/1.xml').returning        "", 404
-  get('/contacts/447693.xml').returning   fixture('contacts/single.xml')
+  get('/contacts.xml').returning fixture('contacts/all.xml')
+  get('/contacts/1.xml').returning "", 404
+  get('/contacts/447693.xml').returning fixture('contacts/single.xml')
+  get('/contacts/1/invoices.xml').returning "", 404
+  get('/contacts/469012/invoices.xml').returning fixture('contacts/invoices.xml')
 
   get('/invoices.xml').returning          fixture('invoices/all.xml')
   get('/invoices/1.xml').returning        "", 404
