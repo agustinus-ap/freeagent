@@ -3,7 +3,7 @@ module FreeAgent
   # Holds information about library version.
   module Version
     MAJOR = 0
-    MINOR = 1
+    MINOR = 2
     PATCH = 0
     BUILD = nil
 
