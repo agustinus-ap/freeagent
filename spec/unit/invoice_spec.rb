@@ -63,4 +63,40 @@ describe FreeAgent::Invoice do
     end
   end
 
+  describe "#mark_as_draft" do
+    before(:each) do
+      @invoice = FreeAgent::Invoice.find(2715138)
+    end
+
+    it "does not complain on success" do
+      @invoice.mark_as_draft.should be_true
+    end
+
+    it "reloads the attributes"
+  end
+
+  describe "#mark_as_sent" do
+    before(:each) do
+      @invoice = FreeAgent::Invoice.find(2715138)
+    end
+
+    it "does not complain on success" do
+      @invoice.mark_as_sent.should be_true
+    end
+
+    it "reloads the attributes"
+  end
+
+  describe "#mark_as_cancelled" do
+    before(:each) do
+      @invoice = FreeAgent::Invoice.find(2715138)
+    end
+
+    it "does not complain on success" do
+      @invoice.mark_as_cancelled.should be_true
+    end
+
+    it "reloads the attributes"
+  end
+
 end

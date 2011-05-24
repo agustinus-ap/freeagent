@@ -26,7 +26,7 @@ module FreeAgent
     # - has_many :bills
     # - has_many :estimates
     # - has_many :projects
-    # has_many :invoices
+    # * has_many :invoices
 
 
     validates_presence_of :first_name, :unless => :organisation_name?

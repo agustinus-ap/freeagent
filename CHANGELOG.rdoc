@@ -13,6 +13,8 @@
 
 * NEW: Added support for Contact#invoices.
 
+* NEW: Added support for Invoice status methods.
+
 * CHANGED: Added .gemspec description and summary.
 
 

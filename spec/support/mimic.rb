@@ -28,13 +28,28 @@ Mimic.mimic do
   get('/contacts/1/invoices.xml').returning "", 404
   get('/contacts/469012/invoices.xml').returning fixture('contacts/invoices.xml')
 
-  get('/invoices.xml').returning          fixture('invoices/all.xml')
-  get('/invoices/1.xml').returning        "", 404
-  get('/invoices/1/*').returning          "", 404
-  get('/invoices/2715138.xml').returning  fixture('invoices/single.xml')
-  get('/invoices/2/invoice_items.xml').returning      fixture('invoice_items/all.xml')
-  get('/invoices/2/invoice_items/1.xml').returning    "", 404
-  get('/invoices/2/invoice_items/2.xml').returning    fixture('invoice_items/single.xml')
+  get('/invoices.xml').
+      returning fixture('invoices/all.xml')
+  get('/invoices/1.xml').
+      returning "", 404
+  get('/invoices/1/*').
+      returning "", 404
+  get('/invoices/2715138.xml').
+      returning fixture('invoices/single.xml')
+
+  get('/invoices/2/invoice_items.xml').
+      returning fixture('invoice_items/all.xml')
+  get('/invoices/2/invoice_items/1.xml').
+      returning "", 404
+  get('/invoices/2/invoice_items/2.xml').
+      returning fixture('invoice_items/single.xml')
+
+  put('/invoices/2715138/mark_as_draft.xml').
+      returning "", 200
+  put('/invoices/2715138/mark_as_sent.xml').
+      returning "", 200
+  put('/invoices/2715138/mark_as_cancelled.xml').
+      returning "", 200
 
   get('/projects.xml').returning                      fixture('projects/all.xml')
   get('/projects/1.xml').returning                    "", 404
